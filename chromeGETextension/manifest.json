@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Blog Stats",
+  "description": "This extension shows all blog posts on WordPress that are tagged The Iron Yard in a pop up.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "wordpress-logo.png",
+    "default_popup": "main.html",
+    "default_title": "The Iron Yard Blog Posts"
+  },
+
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "https://public-api.wordpress.com/rest/*",
+    "https://ajax.googleapis.com/"
+  ],
+
+  "content_security_policy": "script-src 'self' https://public-api.wordpress.com; object-src 'self'"
+
+}
