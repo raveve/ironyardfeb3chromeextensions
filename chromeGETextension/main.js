@@ -33,7 +33,7 @@ var page = {
           '">' +
           '<a class="site-name" href="' +
           item.site_URL +
-          '">' +
+          '" target="_blank">' +
           '<p>' +
           item.site_name +
           '</p>' +
@@ -42,7 +42,7 @@ var page = {
           '">' +
           '<a href="' +
           item.URL +
-          '">' +
+          '" target="_blank">' +
           '<h2>' +
           item.title +
           '</h2>' +
